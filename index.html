@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lesson_12 (CSS Form)</title>
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <main class="main">
+        <a href="https://google.com" target="_blank">Google</a>
+        <section class="contact">
+            <!-- Тег form - указывает что в этом месте есть форма -->
+
+            <!-- GET - не безопасный метод -->
+            <!-- POST - безопасный метод шифрует данные-->
+
+            <!-- action - обязательный атрибут form -->
+            <form action="#" method="GET" target="_self" class="form" autocomplete="off">
+                <fieldset class="form__contact">
+                    <legend>User Contact</legend>
+                    <input type="text" placeholder="Your name..." required>
+                    <input type="email" placeholder="Your email...">
+                    <input type="number" placeholder="Your number..." required>
+                </fieldset>
+                <label>Your birthday
+                    <input type="date">
+                </label>
+
+
+                <input type="password" placeholder="Your password..." required>
+
+                <div class="input__auto">
+                    <label for="auto">Auto</label>
+                    <input type="checkbox" id="auto" checked>
+                </div>
+
+                <label>Moto
+                    <input type="checkbox">
+                </label>
+                <!-- <input type="checkbox" id="moto"> -->
+
+                <label for="horse">Horse</label>
+                <input type="checkbox" id="horse">
+                <fieldset>
+                    <legend>User Gender</legend>
+                    <label>
+                        <input type="radio" name="gendor" value="men" checked>
+                        Men
+                    </label>
+                    <label>
+                        <input type="radio" name="gendor" value="women">
+                        Women
+                    </label>
+                    <label>
+                        <input type="radio" name="gendor" value="trans">
+                        Trans
+                    </label>
+                </fieldset>
+
+
+
+
+                <input type="image">
+
+                <select name="citys" id="city">
+                    <option selected disabled>Вибрати місто</option>
+                    <option value="Франківськ">Франківськ</option>
+                    <option value="Житомир">Житомир</option>
+                    <option value="Дніпро">Дніпро</option>
+                    <option value="Харків">Харків</option>
+                    <option value="Барвінки">Барвінки</option>
+                    <option value="Миколаїв">Миколаїв</option>
+                    <option value="Кременчуг">Кременчуг</option>
+                    <option value="Полтава">Полтава</option>
+                </select>
+                <textarea name="Message" id="" cols="20" rows="5" placeholder="Your message..."></textarea>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Send">
+                <button type="submit" value="Send">
+                    <img src="./img/header-background_mini.png" alt="">
+                </button>
+            </form>
+        </section>
+
+        <section>
+            <div class="block">
+
+            </div>
+            <div class="block2">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+</body>
+
+</html>

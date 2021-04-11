@@ -1,0 +1,60 @@
+@import "fonts.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgb(245 187 245) 30%, #ddc 50%);
+    height: 100vh;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form  * {
+    margin-bottom: 10px;
+    padding: 4px;
+    border: 1px solid rgb(142 196 202 / 80%);
+    border-radius: 4px;
+}
+.form label {
+    border: none;
+}
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+    box-shadow: inset 0px 1px 7px 0px rgb(100 100 100 / 28%);
+}
+
+.form__contact > input {
+    width: 95%;margin: 0 auto;
+}
+
+input[type="reset"] {
+    margin-top: 50px;
+}
+.input__auto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.block,
+.block2 {
+    width: 200px;
+    height: 200px;
+    background: green;
+}
+.block2 {
+    background: red;
+    transition: all 0.4s;
+}
+
+.block:hover + .block2{
+    transform: translate(20px, 20px);
+}
